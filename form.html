@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+        body{
+            padding-top: 50px;
+            font-weight: 600;
+            background-color: azure;
+        }
+        .box{
+            width: 350px;
+            height: 550px;
+            /* background-color: aquamarine; */
+            padding: 20px;
+        }
+        .box2{
+            width: 350px;
+            height: 550px;
+            background-color: rgb(255, 127, 255);
+        }
+        .l-img{
+            height: 25px;
+            width: 25px;
+        }
+
+        .r-img{
+            height: 500px;
+            width: 500px;
+        }
+
+        .box3{
+            padding-top: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <h5><img src="arrow.png" class="l-img">Untitled UI</h5>
+                    <h3>Join Our Network</h3>
+                    <p>We'd love to have you. Join our network of remote and freelance workers.</p>
+                    <button class="btn btn-outline-dark form-control"><img class="l-img" src="google.png" style="margin-right: 5px;" >Sign up With Google</button>
+                    <span style="text-align: center; display: block;">or</span>
+                    <form action="">
+                        <label for="name" class="form-label">Name*</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                        <label for="email" class="form-label">Email*</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                        <label for="password" class="form-label">Password*</label>
+                        <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                        <button class="btn btn-dark form-control mt-3">Sign Up</button>
+                        <span style="text-align: center; display: block;">Alright, have an account? <a href="">Log In</a></span>
+                    </form>
+                </div>
+            </div>
+            <div class="col-8" >
+                <div class="card text-bg-dark border-0">
+                    <img src="dubai.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <div class="box3">
+                        <h5 class="card-title">Our philosophy is simple</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
